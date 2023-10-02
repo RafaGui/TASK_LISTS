@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.blockTask{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.Tasks{
+    z-index: 10;
+    background-color: #272727;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.178);
+    border-radius: 3px;
+    animation: upXx 1s ease-in-out;
+}
+@keyframes upXx {
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: unset;
+        opacity: 1;
+    }
+}
+.dataTask{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.taskO{
+    width: 100%;
+}
+.taskO label{
+    font-size: .8rem;
+    color: #919090c7;
+}
+.taskO input, .taskO textarea{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #313131;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.theTitle h1{
+    color: rgb(184, 184, 184);
+}
+.localTask{
+    padding: 10px;
+    display: flex;
+    align-items:start;
+    justify-content: start;
+    gap: 10px;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 200px;
+    height: 200px;
+    border: 1px solid #313131;
+}
+.TaskView{
+    padding: 10px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    animation: TafXx .5s ease-in-out;
+}
+@keyframes TafXx {
+    0%{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    100% {
+        margin-top: unset;
+        opacity: 1;
+    }
+}
+.TaskView details{
+    color: royalblue;
+    font-size: .7rem;
+    margin-top: 10px;
+}
+.title{
+    color: royalblue;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.desc p {
+    color: #808080;
+    font-size: .8rem;
+    max-width: 300px;
+}
+.desc a{
+    color: #fff;
+    background-color: royalblue;
+    padding:10px;
+    cursor: pointer;
+    font-size: .8rem;
+}
+.buttTaskAdd button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border:none;
+    padding: 10px;
+    background-color: royalblue;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.removTaskB button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(209, 68, 68);
+    cursor: pointer;
+}

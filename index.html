@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="blockTask">
+        <div class="Tasks">
+            <div class="theTitle">
+                <h1>Lista de Tarefas</h1>
+            </div>
+            <div class="dataTask">
+                <div class="taskO">
+                    <label>Insira o Título da Tarefa</label> <br>
+                    <input type="text" id="titleTask" placeholder="Título">
+                </div>
+                <div class="taskO">
+                    <label>Insira uma descrição para tarefa</label><br>
+                    <textarea id="descTask" cols="30" rows="5" style="resize: none;" placeholder="Descrição"></textarea>
+                </div>
+            </div>
+            <div class="buttTaskAdd">
+                <button class="bttAdd">Adicionar Tarefa <i class='bx bx-list-plus' style='color:#ffffff' ></i></button>
+            </div>
+            <br>
+            <fieldset class="localTask">
+            </fieldset>
+            <br>
+            <div class="removTaskB">
+                <button class="RemTask">Limpar Lista <i class='bx bx-flag'></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
